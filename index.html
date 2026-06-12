@@ -114,9 +114,10 @@ section{padding-block:var(--space)}
 
 /* ---------- КОНЦЕПЦИЯ ---------- */
 .concept{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.concept .big{grid-column:1 / -1}
 figure{margin:0}
 .frame{border-radius:var(--radius-l);overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);background:#0b3540}
-.frame img{width:100%;height:100%;object-fit:cover;aspect-ratio:8/5}
+.frame img{width:100%;height:100%;object-fit:cover;aspect-ratio:16/9}
 .cap{font-size:.9rem;color:var(--muted);margin-top:.7rem;display:flex;gap:.5rem;align-items:center}
 .cap::before{content:"";width:18px;height:2px;background:var(--accent);flex:none}
 .note{margin-top:1.4rem;font-size:.92rem;color:var(--muted);font-style:italic}
@@ -295,13 +296,17 @@ footer a{color:#9fb6b8}
 <section class="wrap reveal">
   <div class="shead"><span class="num">03</span><h2>Концепция объекта</h2></div>
   <div class="concept">
-    <figure>
-      <div class="frame"><img src="images/render-interior.jpg" alt="Визуализация эллинга: хранение лодок прибрежной гребли, интерьер" width="1600" height="1000"></div>
-      <figcaption class="cap">Эллинг и флот лодок — внутреннее пространство</figcaption>
+    <figure class="big">
+      <div class="frame"><img src="images/render-interior.jpg" alt="Внутри эллинга: лодки прибрежной гребли, эргометры и зона подготовки" width="3024" height="1706"></div>
+      <figcaption class="cap">Внутри эллинга: флот лодок, эргометры и зона подготовки спортсменов</figcaption>
     </figure>
     <figure>
-      <div class="frame"><img src="images/render-exterior.jpg" alt="Визуализация эллинга на городском пляже, экстерьер" width="1600" height="1000"></div>
-      <figcaption class="cap">Размещение остеклённого эллинга на пляже</figcaption>
+      <div class="frame"><img src="images/render-exterior.jpg" alt="Эллинг и команда на городском пляже" width="3024" height="1706"></div>
+      <figcaption class="cap">Эллинг и команда на городском пляже</figcaption>
+    </figure>
+    <figure>
+      <div class="frame"><img src="images/render-sea.jpg" alt="Эллинг со стороны моря" width="3024" height="1706"></div>
+      <figcaption class="cap">Вид со стороны набережной и моря</figcaption>
     </figure>
   </div>
   <p class="note">Визуализация концепции выполнена в SketchUp. Архитектурное и техническое решение уточняется на стадии рабочего проектирования.</p>
